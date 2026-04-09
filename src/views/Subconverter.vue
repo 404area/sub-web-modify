@@ -354,7 +354,11 @@ export default {
             label: "404规则",
             options: [
               {
-                label: "404home 规则模板",
+                label: "404home 加速源——规则模板",
+                value: "https://gh.404area.vip/https://raw.githubusercontent.com/404area/customacl/refs/heads/main/config/home.ini"
+              },
+              {
+                label: "404home 直连源-规则模板",
                 value: "https://raw.githubusercontent.com/404area/customacl/refs/heads/main/config/home.ini"
               }
             ]
@@ -789,9 +793,9 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://url.v1.mk" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://subapi.404area.vip" : this.getUrlParam(),
         shortType: "https://v1.mk/short",
-        remoteConfig: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online.ini",
+        remoteConfig: "https://gh.404area.vip/https://raw.githubusercontent.com/404area/customacl/refs/heads/main/config/home.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
@@ -807,7 +811,7 @@ export default {
         tfo: false,
         sort: false,
         expand: true,
-        scv: false,
+        scv: true,
         fdn: false,
         appendType: false,
         insert: false, // 是否插入默认订阅的节点，对应配置项 insert_url
