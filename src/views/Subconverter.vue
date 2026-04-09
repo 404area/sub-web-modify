@@ -345,7 +345,7 @@ export default {
         },
         backendOptions: [
           { value: "https://subapi.404area.vip" },
-          { value: "https://subapi.169988.xyz" },
+          { value: "https://ussubapi.404area.vip" },
           { value: "https://url.v1.mk" },
           { value: "https://api.v1.mk" },
         ],
@@ -359,7 +359,7 @@ export default {
               },
               {
                 label: "404home 直连源-规则模板",
-                value: "https://raw.githubusercontent.com/404area/customacl/refs/heads/main/config/home.ini"
+                value: "https://raw.githubusercontent.com/404area/customacl/refs/heads/main/config/directhome.ini"
               }
             ]
           },
